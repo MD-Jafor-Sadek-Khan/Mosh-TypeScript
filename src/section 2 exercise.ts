@@ -23,10 +23,10 @@ let g = []
 
 // two parameters are being expected by the song function yet one was given
 
-let song: {
-  title: string
-  releaseYear: number
-} = { title: "My song" }
+// let song: {
+//   title: string
+//   releaseYear: number
+// } = { title: "My song" }
 
 // sol
 
@@ -45,8 +45,9 @@ let song3: {
 // snippet 2
 
 //  prices is of type number[] so assinging a string value to index 0 is causing the error
+
 let prices = [100, 200, 300]
-prices[0] = "$100"
+// prices[0] = "$100"
 
 // sol
 
@@ -57,7 +58,8 @@ prices2[0] = 100
 // snippet 3
 
 // suppose to return a "number" but is returning "undefined"
-function myFunc(a: number, b: number): number {}
+
+// function myFunc(a: number, b: number): number {}
 
 // sol
 
