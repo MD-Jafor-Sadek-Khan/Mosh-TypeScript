@@ -15,12 +15,4 @@ class Account {
   }
 }
 
-let account = new Account(1, 'rahat', 0)
-
-console.log(account);
-account.deposite(100)
-console.log('balance',account.balance);
-console.log('type',typeof account);
-console.log('instance of Account',account instanceof Account);
-
 
