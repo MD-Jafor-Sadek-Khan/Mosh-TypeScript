@@ -1,4 +1,5 @@
 "use strict";
-let age = 12;
-console.log(age);
+let price = 122222999;
+let course = "TypeScript";
+let saleable = true;
 //# sourceMappingURL=index.js.map
