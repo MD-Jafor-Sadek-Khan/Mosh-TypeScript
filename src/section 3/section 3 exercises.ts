@@ -1,4 +1,4 @@
-// Given the data below, define a type alias for representing users.
+//* Given the data below, define a type alias for representing users.
 
 type User = {
   name: string
@@ -16,7 +16,7 @@ let users: Users = [
   { name: "Kate Müller", age: 28 },
 ]
 
-// • Birds fly. Fish swim. A Pet can be a Bird or Fish. Use type aliases to represent these
+//*  Birds fly. Fish swim. A Pet can be a Bird or Fish. Use type aliases to represent these
 
 type Birds = {
   fly: () => void
@@ -32,32 +32,40 @@ let pet: Pet = {
   fly() {},
 }
 
-// Define a type for representing the days of week. Valid values are “Monday”, “Tuesday”,
-// etc.
+//* Define a type for representing the days of week. Valid values are “Monday”, “Tuesday”,etc.
 
 type Days = "monday" | "tuesday" | "wednesday" | "friday"
 
 let day: Days = "wednesday"
 
-// Simplify the following code snippets:
+//* Simplify the following code snippets:
 
-let user = getUser()
-console.log(user && user.address ? user.address.street : undefined)
+// 1 
+
+//! let user = getUser()
+//! console.log(user && user.address ? user.address.street : undefined)
+
 // sol
-let user = getUser()
-console.log(user?.address?.street)
 
-let x = foo !== null && foo !== undefined ? foo : bar()
+//? let user = getUser()
+//? console.log(user?.address?.street)
+
+// 2
+
+//! let x = foo !== null && foo !== undefined ? foo : bar()
+
 // sol
-let x = foo ?? bar()
 
-// What is the problem in this piece of code?
-let value: unknown = "a"
-console.log(value.toUpperCase())
+//? let x = foo ?? bar()
+
+//* What is the problem in this piece of code?
+
+//! let value: unknown = "a"
+//! console.log(value.toUpperCase())
 
 // we assigned type unknown to value even though we assigned a string to it. now the compiler is confused it the value has string methods or not.
 
 // sol by type narrowing
 
-let value: unknown = "a"
-if (typeof value === "string") console.log(value.toUpperCase())
+//? let value: unknown = "a"
+//? if (typeof value === "string") console.log(value.toUpperCase())
