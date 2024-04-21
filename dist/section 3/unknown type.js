@@ -1,7 +1,7 @@
 "use strict";
 function read(document) {
     if (typeof document === "string")
-        console.log(document);
+        document.toLowerCase();
     else {
         console.log("error");
     }

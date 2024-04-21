@@ -1,5 +1,5 @@
 function read(document: unknown) {
-  if (typeof document === "string") console.log(document)
+  if (typeof document === "string") document.toLowerCase()
   else {
     console.log("error")
   }
