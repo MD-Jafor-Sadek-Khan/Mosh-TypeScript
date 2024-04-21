@@ -20,8 +20,16 @@ class Person3 {
     }
   }
   
-  class
+  class Teacher extends Person3{
+    override get fullName() {
+        return "Professor" + ' ' + super.fullName
+    }
+  }
   
+
+let teacher = new Teacher('mukta','sagol')
+console.log(teacher.fullName);
+
   
   
   
