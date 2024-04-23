@@ -16,9 +16,16 @@ function App() {
     setReminderList(fetchedRemindersList)
   }
 
+  const removeReminder = (id: number) => {
+    setReminderList((prevState) => {
+      const newState = prevState.filter((reminder) => reminder.id !== id)
+      return newState
+    })
+  }
+
   return (
     <div className="App">
-      <ReminderList items={reminderList} />
+      <ReminderList onRemoveReminder={removeReminder} items={reminderList} />
     </div>
   )
 }
