@@ -1,5 +1,7 @@
 import Store3, { Formats } from "./default exports";
 import { Circle, Squre } from "./shapes";
+import * as Vhiecle from './wildcard import'
+
 
 const circle = new Circle(5)
 console.log(circle.area());
@@ -12,3 +14,6 @@ let formate = Formats.Compressed
 
 store
 formate
+
+const honda = new Vhiecle.Bike()
+honda
