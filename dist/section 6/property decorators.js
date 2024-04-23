@@ -14,7 +14,7 @@ function MinLength(length) {
             },
             set(newValue) {
                 if (newValue.length < length) {
-                    throw new Error(`${propertyName} can not be less than ${length}charecters`);
+                    throw new Error(`${propertyName} can not be less than ${length} charecters`);
                 }
                 value = newValue;
             },
