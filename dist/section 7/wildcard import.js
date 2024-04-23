@@ -1,9 +1,16 @@
-export class Boat {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Cycle = exports.Bike = exports.Car = exports.Boat = void 0;
+class Boat {
 }
-export class Car {
+exports.Boat = Boat;
+class Car {
 }
-export class Bike {
+exports.Car = Car;
+class Bike {
 }
-export class Cycle {
+exports.Bike = Bike;
+class Cycle {
 }
+exports.Cycle = Cycle;
 //# sourceMappingURL=wildcard%20import.js.map

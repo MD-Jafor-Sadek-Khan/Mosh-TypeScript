@@ -1,4 +1,7 @@
-export class Circle {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Squre = exports.Circle = void 0;
+class Circle {
     constructor(radius) {
         this.radius = radius;
     }
@@ -6,7 +9,8 @@ export class Circle {
         return Math.PI * this.radius ** 2;
     }
 }
-export class Squre {
+exports.Circle = Circle;
+class Squre {
     constructor(side) {
         this.side = side;
     }
@@ -14,4 +18,5 @@ export class Squre {
         return this.side ** 2;
     }
 }
+exports.Squre = Squre;
 //# sourceMappingURL=shapes.js.map

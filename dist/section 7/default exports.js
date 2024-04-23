@@ -1,10 +1,14 @@
-export default class Store3 {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Formats = void 0;
+class Store3 {
 }
-export var Formats;
+exports.default = Store3;
+var Formats;
 (function (Formats) {
     Formats[Formats["Raw"] = 0] = "Raw";
     Formats[Formats["Compressed"] = 1] = "Compressed";
-})(Formats || (Formats = {}));
+})(Formats || (exports.Formats = Formats = {}));
 class Compress {
 }
 class Encrypt {
