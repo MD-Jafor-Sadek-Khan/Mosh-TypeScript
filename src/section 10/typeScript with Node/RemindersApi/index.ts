@@ -1,9 +1,13 @@
 import express from "express"
+import remindersRouter from "./Routes/Reminder"
 
 const app = express()
 
-app.get('/',(req, res)=>{
-    res.send("Wait for a minute or 2million")
+app.use(express.json())
+app.use("/reminders", remindersRouter)
+
+app.get("/", (req, res) => {
+  res.send("Home")
 })
 
 app.listen(8000, () => console.log("server started"))
